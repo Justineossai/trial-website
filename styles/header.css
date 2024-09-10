@@ -1,0 +1,219 @@
+.search-bar{
+    font-family: arial;
+}
+
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(238, 237, 237);
+    border-bottom-style: solid;
+}
+
+.left-section {
+    align-items: center;
+    display: flex;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 23px;
+}
+
+
+.youtube-logo {
+    height: 20px;
+}
+
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    height: 36px;
+    width: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 18px 0px 0px 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    z-index: 20px;
+}
+
+input {
+    border: 0.5px solid;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: 0px solid blue;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.10);
+    
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button {
+    height: 40px;
+    width: 66px;
+    border-radius: 0px 18px 18px 0px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgb(252, 252, 252);
+    border-color: rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.search-button:hover,
+.upload-icon-container:hover, 
+.notifications-icon-container:hover, 
+.youtube-apps-icon-container:hover {
+   cursor: pointer;
+    background-color: rgb(243, 243, 243);
+}
+
+.voice-search-button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 214, 214);
+}
+
+.search-button, 
+.voice-search-button, 
+ .upload-icon-container, 
+ .youtube-apps-icon-container, 
+ .notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip, 
+.voice-search-button .tooltip, 
+.upload-icon-container .tooltip, 
+.youtube-apps-icon-container .tooltip, 
+.notifications-icon-container .tooltip {
+    font-family: Roboto ,Arial;
+    font-size: 12.5px;
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 9.5px 8px 9.5px 8px;
+    border-radius: 4px;
+    bottom: -50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+
+.search-button:hover .tooltip, 
+ .voice-search-button:hover .tooltip, 
+ .upload-icon-container:hover .tooltip,
+ .notifications-icon-container:hover .tooltip, 
+ .youtube-apps-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
+.search-icon {
+    height: 25px;
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(243, 243, 243);
+
+}
+
+.voice-search-icon {
+    height: 24px;
+}
+
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload-icon-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+.upload-icon {
+    height: 24px;
+}
+
+.youtube-apps-icon-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.notifications-icon-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    background-color: rgb(201, 0, 0);
+    color: white;
+    font-family: Roboto, arial;
+    font-size: 11px;
+    padding: 2px 4.5px 1.5px 4.5px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 16px;
+}
